@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Young+Serif&display=swap');
+    /* font-family: 'Outfit', sans-serif;
+      font-family: 'Young Serif', serif;
+      font-weight: 400, 600, 700 */
+
+    body, html {
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      height: fit-content;
+      background: hsl(30, 54%, 90%);
+      min-width: 320px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      padding: 128px 0;
+    }
+
+    main {
+      padding: 32px;
+      background: white;
+      width: 750px;
+      min-width: 320px;
+      border-radius: 24px;
+    }
+
+    main > img {
+      border-radius: 12px;
+      width: 750px;
+      /* padding: 12px; */
+    }
+
+    main > h1 {
+      font-family: 'Young Serif', serif;
+      color: hsl(24, 5%, 18%);
+      font-weight: 400;
+      font-size: 32px;
+    }
+
+    main > p {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    main > .purple {
+      background: hsl(330, 100%, 98%);
+      padding: 6px 12px;
+      border-radius: 12px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    main > .purple > h1 {
+      color: hsl(332, 51%, 32%);
+    }
+
+    main > .purple > ul {
+      opacity: 0.6;
+      padding: 0 24px;
+    }
+
+    main > .purple > ul > li {
+      padding-left: 12px;
+      list-style: hsl(332, 51%, 32%);
+      padding: 4px;
+    }
+
+    main > .ingredients {
+      color: hsl(14, 45%, 36%);
+      font-weight: 400;
+    }
+
+    main > ul {
+      padding: 0 24px;
+      font-family: 'Outfit', sans-serif;
+    }
+
+    main > ul > li {
+      padding-left: 12px;
+      /* color: hsl(24, 5%, 18%); */
+      opacity: 0.6;
+      padding: 4px;
+    }
+
+    hr {
+      background-color: hsl(24, 5%, 18%);
+      opacity: 0.2;
+      border: none;
+      height: 1px;
+      margin-top: 36px;
+    }
+
+    main > .instructions {
+      color: hsl(14, 45%, 36%);
+    }
+
+    main > ol {
+      font-family: 'Outfit', sans-serif;
+    }
+
+    main > ol > li {
+      padding-left: 12px;
+      /* color: hsl(24, 5%, 18%); */
+      opacity: 0.6;
+      padding: 4px;
+    }
+
+    main > .nutrition {
+      color: hsl(14, 45%, 36%);
+    }
+
+    main > .nutrition-p {
+      opacity: 0.6;
+    }
+
+    table {
+			/* border:1px solid #b3adad; */
+			/* border-collapse:collapse; */
+			padding: 5px;
+      width: 100%;
+      font-family: 'Outfit', sans-serif;
+		}
+		table th {
+			/* border:1px solid #b3adad; */
+			padding: 5px;
+			color: #313030;
+		}
+		table td {
+			border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+			text-align: left;
+			padding: 12px;
+			background: #ffffff;
+			color: #313030;
+		}
+
+    table td b {
+      color: hsl(14, 45%, 36%);
+    }
+
+    @media only screen and (max-width: 848px) {
+      section {
+        background: white;
+        padding: 0;
+        display: block;
+      }
+
+      main > img {
+        background-size: contain;
+      }
+    }
+
+
+    /* .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); } */
+  </style>
+</head>
+<body>
+
+  <section>
+    <main>
+      <img src="assets/images/image-omelette.jpeg" alt="picture">
+      <h1>Simple Omelette Recipe</h1>
+      <p>An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      <div class="purple">
+        <h1>Preparation time</h1>
+        <ul>
+          <li><b>Total: </b>Approximately 10 minutes</li>
+          <li><b>Preparation: </b> 5 minutes</li>
+          <li><b>Cooking: </b> 5 minutes</li>
+        </ul>
+      </div>
+
+      <h1 class="ingredients">Ingredients</h1>
+      <ul>
+        <li>2-3 large eggs</li>
+        <li>Salt, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>Pepper, to taste</li>
+        <li>1 tablespoon of butter or oil</li>
+        <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+      </ul>
+
+      <hr>
+
+      <h1 class="instructions">Instructions</h1>
+      <ol>
+        <li><b>Beat the eggs:</b> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
+        <li><b>Heat the pan:</b> Place a non-stick frying pan over medium heat and add butter or oil.
+        </li>
+        <li><b>Cook the omelette:</b> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
+        <li><b>Add fillings (optional):</b> When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
+        <li><b>Fold and serve:</b> As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
+        <li><b>Enjoy:</b> Serve hot, with additional salt and pepper if needed.</li>
+      </ol>
+
+      <hr>
+
+      <h1 class="nutrition">Nutrition</h1>
+      <p class="nutrition-p">The table below shows nutritional values per serving without the additional fillings.
+      </p>
+
+      <table>
+        <tbody>
+          <tr>
+            <td style="opacity: 0.6">Calories</td>
+            <td><b>277kcal</b></td>
+          </tr>
+          <tr>
+            <td style="opacity: 0.6">Carbs</td>
+            <td><b>0g</b></td>
+          </tr>
+          <tr>
+            <td style="opacity: 0.6">Protein</td>
+            <td><b>20g</b></td>
+          </tr>
+          <tr>
+            <td style="opacity: 0.6">Fat</td>
+            <td><b>22g</b></td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </section>
+</body>
+</html>
